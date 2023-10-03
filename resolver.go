@@ -4,7 +4,7 @@ import (
 	"net"
 	"strings"
 
-	stringsutil "github.com/khulnasoft-labs/utils/strings"
+	stringsutil "github.com/khulnasoft-lab/utils/strings"
 )
 
 type Protocol string

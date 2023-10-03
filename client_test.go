@@ -126,6 +126,6 @@ func TestQueryMultiple(t *testing.T) {
 func TestTrace(t *testing.T) {
 	client, _ := New([]string{"8.8.8.8:53", "1.1.1.1:53"}, 5)
 
-	_, err := client.Trace("www.khulnasoft-labs.io", dns.TypeA, 100)
+	_, err := client.Trace("www.khulnasoft-lab.io", dns.TypeA, 100)
 	require.Nil(t, err, "could not resolve dns")
 }

@@ -14,10 +14,10 @@ import (
 	"time"
 
 	"github.com/miekg/dns"
-	"github.com/khulnasoft-labs/retryabledns/doh"
-	"github.com/khulnasoft-labs/retryabledns/hostsfile"
-	iputil "github.com/khulnasoft-labs/utils/ip"
-	sliceutil "github.com/khulnasoft-labs/utils/slice"
+	"github.com/khulnasoft-lab/retryabledns/doh"
+	"github.com/khulnasoft-lab/retryabledns/hostsfile"
+	iputil "github.com/khulnasoft-lab/utils/ip"
+	sliceutil "github.com/khulnasoft-lab/utils/slice"
 )
 
 var internalRangeCheckerInstance *internalRangeChecker
@@ -342,7 +342,7 @@ func (c *Client) queryMultiple(host string, requestTypes []uint16, resolver Reso
 				continue
 			}
 
-			// https://github.com/khulnasoft-labs/retryabledns/issues/25
+			// https://github.com/khulnasoft-lab/retryabledns/issues/25
 			if resp != nil && resp.Truncated && c.TCPFallback {
 				resp, _, err = c.tcpClient.Exchange(msg, resolver.String())
 				if err != nil || resp == nil {
