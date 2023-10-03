@@ -1,6 +1,6 @@
 module github.com/khulnasoft-lab/retryabledns
 
-go 1.20
+go 1.19
 
 require (
 	github.com/khulnasoft-lab/utils v0.0.46
