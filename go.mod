@@ -7,7 +7,7 @@ toolchain go1.24.6
 require (
 	github.com/khulnasoft-lab/utils v0.0.47
 	github.com/miekg/dns v1.1.68
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.11.1
 )
 
 require (
