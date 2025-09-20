@@ -2,7 +2,7 @@ module github.com/khulnasoft-lab/retryabledns
 
 go 1.23.0
 
-toolchain go1.24.6
+toolchain go1.25.1
 
 require (
 	github.com/khulnasoft-lab/utils v0.0.47
